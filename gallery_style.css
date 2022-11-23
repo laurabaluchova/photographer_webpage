@@ -1,0 +1,26 @@
+body {
+	font-family: 'Tulpen One', cursive;
+}
+
+h1{
+	font-size: 10VW;
+	margin: 10px;
+	text-align: center;
+}
+
+img {	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.images {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-rows: 1fr;	
+	gap: 5px;
+}
+
+.img1, .img9, .img8 {
+	grid-column: span 2;
+}
