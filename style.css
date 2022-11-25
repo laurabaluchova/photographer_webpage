@@ -1,0 +1,91 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #17141d;
+	color: white;
+	font-family: 'Tulpen One', cursive;
+}
+
+
+h2 {
+	font-size: 5rem;	
+	text-shadow: 5px 5px 8px #ff0000;
+	margin-bottom: 5px;
+}
+
+.black_text {
+	color: black;
+	text-shadow: 5px 5px 8px white;
+}
+
+.card_list {
+	display: flex;
+	padding: 3rem;
+	overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+
+.card {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 350px;
+	width: 400px;
+	min-width: 250px;
+	padding: 1.5rem;
+
+	border-radius: 16px;
+	background: #17141d;
+	box-shadow: -1rem 0 3rem #000;
+
+	transition: .2s;
+
+	background-size: cover;
+	filter: grayscale(100%);
+}
+
+.card:focus-within~.card, .card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;    
+}
+
+.one {
+	background-image: url("wedding.jpg");	
+		
+}
+
+.two {
+	background-image: url("pet.jpg");
+}
+
+.three {
+	background-image: url("portrait.jpg");
+}
+
+.four {
+	background-image: url("family.jpg");
+}
+
+
