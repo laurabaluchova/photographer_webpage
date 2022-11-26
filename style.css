@@ -6,11 +6,56 @@ body {
 	font-family: 'Tulpen One', cursive;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;    
+    height: 95vh;
+    background: url(photographer.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+h1 {
+	color: black;
+	font-size: clamp(3.5rem, 8VW, 8.5VW);
+	text-align: left;
+	padding-left: 10VW;
+	margin-bottom: 60px;
+}
+
+ h1:hover {
+      animation: flash;
+      animation-duration: 2s;
+  }
+
+button {
+	width: 20VW;
+	margin-left: 10VW;	
+	padding: 10px 5px;
+	font-size: 1.5rem;
+	border: 5px solid black;
+	background-color: white;
+	border-radius: 16px;
+}
+
+button:hover {	
+	background-color: black;
+	color: white;
+}
 
 h2 {
-	font-size: 5rem;	
+	font-size: 5rem;		
 	text-shadow: 5px 5px 8px #ff0000;
 	margin-bottom: 5px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 5rem;
+	margin: 20px;
+	text-transform: uppercase;
 }
 
 .black_text {
@@ -20,35 +65,29 @@ h2 {
 
 .card_list {
 	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 	padding: 3rem;
+	height: 70vh;
 	overflow-x: scroll;
+	margin-top: 30px;
+	padding-top: 20px;	
 }
 
-.card-list::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+.card_header {
+	font-size: 3rem;	
 }
-.card-list::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-}
-
-.card-list::-webkit-scrollbar-track {
-    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
-}
-
 
 .card {
 	display: flex;
 	position: relative;
-	flex-direction: column;
-	justify-content: flex-end;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;	
 	height: 350px;
 	width: 400px;
 	min-width: 250px;
 	padding: 1.5rem;
-
 	border-radius: 16px;
 	background: #17141d;
 	box-shadow: -1rem 0 3rem #000;
@@ -87,5 +126,6 @@ h2 {
 .four {
 	background-image: url("family.jpg");
 }
+
 
 
